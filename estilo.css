@@ -1,0 +1,23 @@
+body {
+    background-color: #457b9d;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 5px;               
+    width: auto;             
+    padding: 10px;
+    background-color: #fff; 
+    border-radius: 5px;     
+}
+
+form > button {
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+}
