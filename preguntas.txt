@@ -1,0 +1,11 @@
+- ¿Cómo se recibe y procesa la información en PHP?
+El código PHP de la calculadora recibe información mediante POST, procesa la expresión matemática usando la función resultado() que valida caracteres permitidos con expresiones regulares y utiliza eval() para calcular, todo protegido con un bloque try-catch.
+
+- ¿Cómo se aplica el estilo con CSS y qué propiedades se usaron?
+El estilo CSS aplica un diseño centrado con flexbox para el cuerpo y grid para los botones, usando propiedades como background-color, border-radius y padding para crear una interfaz visual agradable con sombras y bordes redondeados.
+
+- ¿Qué validaciones hace JavaScript y cómo se implementan sin usar POO?
+JavaScript implementa validaciones funcionales sin POO mediante una variable global calc que almacena la expresión y funciones simples que actualizan la pantalla, limpian valores o calculan resultados usando eval(), todo sin crear clases u objetos.
+
+- ¿Cómo se maneja el flujo entre cliente y servidor?
+El flujo cliente-servidor ocurre cuando el usuario interactúa con la calculadora en el navegador, JavaScript captura y muestra los datos, y al presionar igual, envía la expresión al servidor PHP que la procesa, valida y devuelve el resultado en una nueva página HTML, creando un ciclo completo de interacción.
