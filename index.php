@@ -32,12 +32,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
         body {
             background-color: #457b9d;
             display: flex;
             justify-content: center; 
             align-items: center;     
-            height: 100vh;           
+            height: 100vh;   
+            font-family: "Cal Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;        
         }
 
         form {
@@ -73,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form action="" method="POST">
         <input type="hidden" name="expresion" id="expresionHidden">
         <div class="grid">
-            <div id="display" style="padding:50px; border: black solid 1px; grid-column-start: 1; grid-column-end: 5;"><?php echo $resultadoCalculo; ?></div>
+            <div id="display" style="padding:50px;  grid-column-start: 1; grid-column-end: 5;"><?php echo $resultadoCalculo; ?></div>
 
             <button type="button" onclick="calc += '7'; display.innerText = calc">7</button>
             <button type="button" onclick="calc += '8'; display.innerText = calc">8</button>
@@ -104,7 +109,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             display.innerText = eval(calc);
             calc = display.innerText;
             
-            // Y también enviar al servidor para procesamiento PHP
             expresionHidden.value = calc;
             document.forms[0].submit();
         }
