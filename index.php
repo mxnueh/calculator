@@ -29,6 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora | Enmanuel</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Li9r6YgKfA+GpCJY9i5OtYdThNQkp9HV6QXo8P7jWwV+5xg9sAEapBykYqY7JcXI" crossorigin="anonymous">
+
 </head>
 <body>
     <style>
@@ -96,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="button" onclick="calc += '.'; display.innerText = calc">.</button>
             <button type="button" onclick="calcularResultado()" style="background-color: #4CAF50" class="item-equal" name="resultado">=</button>
             <button type="button" onclick="calc += '+'; display.innerText = calc">+</button>
-            <button type="button" onclick="calc = ''; display.innerText = ''; alert('Calculator clear')" style="text-align:center; background-color: #f44336; grid-column-start: 1; grid-column-end: 5;">C</button>
+            <button type="button" onclick="calc = ''; display.innerText = ''; alert('Calculator clear')" class="btn btn-danger" style="text-align:center; background-color: #f44336; grid-column-start: 1; grid-column-end: 5;">C</button>
         </div>
     </form>
     
